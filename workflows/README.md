@@ -1,21 +1,21 @@
-# Workflows Compartidos
+# Shared Workflows
 
-Esta carpeta contiene workflows de GitHub Actions compartidos para la organización.
+This folder contains shared GitHub Actions workflows for the organization.
 
-Los workflows definidos aquí pueden ser reutilizados por los repositorios de la organización (`closter-core`, `closter-theme`, etc.) mediante la sintaxis de `workflow_call` o referencias a workflows reutilizables.
+Workflows defined here can be reused by organization repositories (`closter-core`, `closter-theme`, etc.) using the `workflow_call` syntax or references to reusable workflows.
 
-## Estado Actual
+## Current Status
 
-Actualmente no hay workflows definidos. Se añadirán según se definan los requisitos de CI/CD y automatización para los repositorios de la organización.
+Currently no workflows are defined. They will be added as CI/CD and automation requirements are defined for the organization's repositories.
 
-## Estructura Propuesta
+## Proposed Structure
 
-Cuando se definan workflows, se organizarán por propósito:
-- `ci/` - Workflows de integración continua
-- `cd/` - Workflows de despliegue continuo
-- `automation/` - Workflows de automatización (dependabot, sync, etc.)
+When workflows are defined, they will be organized by purpose:
+- `ci/` - Continuous integration workflows
+- `cd/` - Continuous deployment workflows
+- `automation/` - Automation workflows (dependabot, sync, etc.)
 
-## Uso en Repositorios
+## Usage in Repositories
 
-Los repositorios individuales pueden referenciar workflows compartidos desde este repositorio usando la sintaxis estándar de GitHub Actions.
+Individual repositories can reference shared workflows from this repository using the standard GitHub Actions syntax.
 

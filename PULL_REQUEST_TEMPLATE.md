@@ -1,63 +1,63 @@
 ## Related Issues
-<!-- Link obligatorio a la(s) issue(s) relacionada(s) -->
-Closes #<!-- número de issue -->
-Relates to #<!-- número de issue adicional si aplica -->
+<!-- Mandatory link to related issue(s) -->
+Closes #<!-- issue number -->
+Relates to #<!-- additional issue number if applicable -->
 
 ## Related Task(s)
-<!-- Link a Task.md si aplica (obligatorio para features) -->
-- [ ] Task.md vinculado: `closter-core/tasks/active/...`
-- [ ] N/A (bug fix o cambio menor sin task)
+<!-- Link to Task.md if applicable (mandatory for features) -->
+- [ ] Task.md linked: `closter-core/tasks/active/...`
+- [ ] N/A (bug fix or minor change without task)
 
 ## What
-<!-- Descripción clara de qué cambia este PR -->
+<!-- Clear description of what this PR changes -->
 
 ## Why
-<!-- Justificación y contexto del cambio -->
+<!-- Justification and context of the change -->
 
 ## How
-<!-- Resumen técnico de cómo se implementó el cambio -->
-<!-- Mencionar componentes afectados: backend, admin, theme, integraciones, etc. -->
+<!-- Technical summary of how the change was implemented -->
+<!-- Mention affected components: backend, admin, theme, integrations, etc. -->
 
 ## Testing Performed
-<!-- Describir pruebas realizadas -->
-- [ ] Tests unitarios añadidos/actualizados
-- [ ] Tests de integración ejecutados
-- [ ] Pruebas manuales en desarrollo
-- [ ] Pruebas en staging (si aplica)
-- [ ] Validación de integraciones externas (si aplica)
+<!-- Describe tests performed -->
+- [ ] Unit tests added/updated
+- [ ] Integration tests executed
+- [ ] Manual testing in development
+- [ ] Testing in staging (if applicable)
+- [ ] External integrations validation (if applicable)
 
-**Detalles adicionales**:
-<!-- Describir escenarios específicos probados -->
+**Additional details**:
+<!-- Describe specific scenarios tested -->
 
 ## Risk & Rollout Notes
-<!-- Notas sobre riesgos y estrategia de despliegue -->
-- **Riesgo**: <!-- Nivel de riesgo: Bajo / Medio / Alto -->
-- **Breaking changes**: Sí / No
-- **Feature flags**: Sí / No <!-- Si aplica -->
-- **Rollout gradual**: Sí / No <!-- Si aplica -->
-- **Notas adicionales**:
-  <!-- Describir cualquier consideración especial para el despliegue -->
+<!-- Notes on risks and deployment strategy -->
+- **Risk**: <!-- Risk level: Low / Medium / High -->
+- **Breaking changes**: Yes / No
+- **Feature flags**: Yes / No <!-- If applicable -->
+- **Gradual rollout**: Yes / No <!-- If applicable -->
+- **Additional notes**:
+  <!-- Describe any special considerations for deployment -->
 
 ## Checklist
-<!-- Marcar los items que aplican a este PR -->
-- [ ] Código sigue los estándares del proyecto
-- [ ] Documentación actualizada en `closter-core/doc` (si aplica)
-- [ ] Migraciones de base de datos (si aplica): <!-- Describir o link a migración -->
-- [ ] Observabilidad/logging añadido o actualizado (si aplica)
-- [ ] Variables de entorno documentadas/actualizadas (si aplica)
-- [ ] Tests pasan localmente
-- [ ] Revisión de código solicitada
+<!-- Mark items that apply to this PR -->
+- [ ] Code follows project standards
+- [ ] Documentation updated in `closter-core/doc` (if applicable)
+- [ ] Database migrations (if applicable): <!-- Describe or link to migration -->
+- [ ] Observability/logging added or updated (if applicable)
+- [ ] Environment variables documented/updated (if applicable)
+- [ ] Tests pass locally
+- [ ] Code review requested
 
 ## Screenshots
-<!-- Para cambios en UI (admin o theme), adjuntar screenshots -->
+<!-- For UI changes (admin or theme), attach screenshots -->
 <!-- 
-### Antes
-![antes](url)
+### Before
+![before](url)
 
-### Después
-![después](url)
+### After
+![after](url)
 -->
 
 ## Additional Notes
-<!-- Cualquier información adicional relevante para los reviewers -->
+<!-- Any additional information relevant to reviewers -->
 

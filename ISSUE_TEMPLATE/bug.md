@@ -1,51 +1,51 @@
 ---
 name: Bug Report
-description: Reportar un bug o comportamiento inesperado
+description: Report a bug or unexpected behavior
 title: "[BUG] "
 labels: ["bug", "needs-triage"]
 ---
 
 ## Summary
-<!-- Descripción breve y clara del problema -->
+<!-- Brief and clear description of the problem -->
 
 ## Environment
-<!-- Especificar entorno donde ocurre el bug -->
-- **Repositorio afectado**: `closter-core` / `closter-theme` / Ambos
-- **Entorno**: Desarrollo / Staging / Producción
-- **Versión/Commit**: <!-- Si aplica -->
-- **Navegador/Cliente**: <!-- Si aplica -->
+<!-- Specify environment where the bug occurs -->
+- **Affected repository**: `closter-core` / `closter-theme` / Both
+- **Environment**: Development / Staging / Production
+- **Version/Commit**: <!-- If applicable -->
+- **Browser/Client**: <!-- If applicable -->
 
 ## Steps to Reproduce
-<!-- Pasos claros para reproducir el problema -->
+<!-- Clear steps to reproduce the problem -->
 1.
 2.
 3.
 
 ## Expected Behavior
-<!-- Qué debería ocurrir -->
+<!-- What should happen -->
 
 ## Actual Behavior
-<!-- Qué ocurre realmente -->
+<!-- What actually happens -->
 
 ## Logs/Screenshots
-<!-- Adjuntar logs relevantes, screenshots, o stack traces -->
+<!-- Attach relevant logs, screenshots, or stack traces -->
 ```
-<!-- Pegar logs aquí -->
+<!-- Paste logs here -->
 ```
 
 ## Impact
-<!-- Severidad y alcance del bug -->
-- **Severidad**: Crítica / Alta / Media / Baja
-- **Usuarios afectados**: <!-- Si se conoce -->
-- **Workaround disponible**: Sí / No <!-- Si aplica -->
+<!-- Severity and scope of the bug -->
+- **Severity**: Critical / High / Medium / Low
+- **Affected users**: <!-- If known -->
+- **Workaround available**: Yes / No <!-- If applicable -->
 
 ## Proposed Fix (Optional)
-<!-- Si tienes una idea de cómo solucionarlo, descríbela brevemente -->
+<!-- If you have an idea of how to fix it, describe it briefly -->
 
 ## Acceptance Criteria
-<!-- Criterios para considerar el bug resuelto -->
-- [ ] Bug reproducido y confirmado
-- [ ] Fix implementado y testeado
-- [ ] Tests añadidos/actualizados (si aplica)
-- [ ] Documentación actualizada (si aplica)
+<!-- Criteria to consider the bug resolved -->
+- [ ] Bug reproduced and confirmed
+- [ ] Fix implemented and tested
+- [ ] Tests added/updated (if applicable)
+- [ ] Documentation updated (if applicable)
 

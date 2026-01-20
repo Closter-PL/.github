@@ -1,56 +1,56 @@
 ---
 name: Feature Request
-description: Proponer una nueva funcionalidad o mejora
+description: Propose a new functionality or improvement
 title: "[FEATURE] "
 labels: ["enhancement", "needs-discussion"]
 ---
 
 ## Problem
-<!-- Qué problema o necesidad resuelve esta feature -->
+<!-- What problem or need does this feature solve -->
 
 ## Goal
-<!-- Objetivo claro de la feature -->
+<!-- Clear goal of the feature -->
 
 ## Non-Goals
-<!-- Qué NO incluye esta feature (para evitar scope creep) -->
+<!-- What this feature does NOT include (to avoid scope creep) -->
 
 ## User Stories
-<!-- Historias de usuario que cubre esta feature -->
-- Como [rol], quiero [acción] para [beneficio]
+<!-- User stories covered by this feature -->
+- As [role], I want [action] to [benefit]
 
 ## Proposed Approach (High-Level)
-<!-- Enfoque general de implementación, sin entrar en detalles técnicos profundos -->
+<!-- General implementation approach, without going into deep technical details -->
 
 ## Impacted Components
-<!-- Componentes del sistema que se verán afectados -->
+<!-- System components that will be affected -->
 - [ ] `closter-core` backend (FastAPI)
 - [ ] `closter-core` admin (Next.js)
 - [ ] `closter-theme` (Shopify Liquid)
-- [ ] Integraciones externas (APIs/webhooks)
-- [ ] Base de datos (Neon Postgres)
-- [ ] Documentación (`closter-core/doc`)
+- [ ] External integrations (APIs/webhooks)
+- [ ] Database (Neon Postgres)
+- [ ] Documentation (`closter-core/doc`)
 
 ## Risks
-<!-- Riesgos potenciales de la implementación -->
+<!-- Potential risks of the implementation -->
 - 
 - 
 
 ## Acceptance Criteria
-<!-- Criterios para considerar la feature completa -->
-- [ ] Feature implementada según especificación
-- [ ] Tests añadidos/actualizados
-- [ ] Documentación actualizada en `closter-core/doc`
-- [ ] Task.md creado/actualizado en `closter-core/tasks/active/` y vinculado a esta issue
-- [ ] Revisión de código completada
-- [ ] Desplegado en staging y validado
+<!-- Criteria to consider the feature complete -->
+- [ ] Feature implemented according to specification
+- [ ] Tests added/updated
+- [ ] Documentation updated in `closter-core/doc`
+- [ ] Task.md created/updated in `closter-core/tasks/active/` and linked to this issue
+- [ ] Code review completed
+- [ ] Deployed to staging and validated
 
 ## Rollout/Feature Flag
-<!-- Si aplica, describir estrategia de rollout o feature flags -->
-- Feature flag requerido: Sí / No
-- Rollout gradual: Sí / No
-- Notas adicionales:
+<!-- If applicable, describe rollout strategy or feature flags -->
+- Feature flag required: Yes / No
+- Gradual rollout: Yes / No
+- Additional notes:
 
 ---
 
-**IMPORTANTE**: Tras crear esta issue, crear o actualizar el archivo `Task.md` correspondiente en `closter-core/tasks/active/` y vincularlo a esta issue.
+**IMPORTANT**: After creating this issue, create or update the corresponding `Task.md` file in `closter-core/tasks/active/` and link it to this issue.
 

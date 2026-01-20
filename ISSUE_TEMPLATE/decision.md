@@ -1,59 +1,59 @@
 ---
 name: Architecture Decision Record
-description: Documentar una decisión arquitectónica o de integración
+description: Document an architectural or integration decision
 title: "[DECISION] "
 labels: ["architecture", "decision"]
 ---
 
 ## Context
-<!-- Contexto y motivación que llevó a esta decisión -->
-<!-- Incluir problemas técnicos, requisitos de negocio, o limitaciones que se deben abordar -->
+<!-- Context and motivation that led to this decision -->
+<!-- Include technical problems, business requirements, or limitations that need to be addressed -->
 
 ## Decision
-<!-- La decisión tomada, de forma clara y concisa -->
+<!-- The decision made, clearly and concisely -->
 
 ## Alternatives Considered
-<!-- Alternativas que se evaluaron y por qué se descartaron -->
-1. **Alternativa A**: 
+<!-- Alternatives that were evaluated and why they were discarded -->
+1. **Alternative A**: 
    - Pros:
-   - Contras:
-   - Razón de descarte:
+   - Cons:
+   - Reason for rejection:
 
-2. **Alternativa B**: 
+2. **Alternative B**: 
    - Pros:
-   - Contras:
-   - Razón de descarte:
+   - Cons:
+   - Reason for rejection:
 
 ## Consequences
-<!-- Impacto esperado de esta decisión -->
-- **Positivos**:
+<!-- Expected impact of this decision -->
+- **Positive**:
   - 
-- **Negativos**:
+- **Negative**:
   - 
-- **Neutrales**:
+- **Neutral**:
   - 
 
 ## Risks & Mitigations
-<!-- Riesgos asociados y cómo se mitigan -->
-- **Riesgo**: 
-  - **Mitigación**: 
+<!-- Associated risks and how they are mitigated -->
+- **Risk**: 
+  - **Mitigation**: 
 
 ## Links to Documentation
-<!-- Enlaces a documentación relevante en closter-core/doc -->
-- Documentación relacionada: `closter-core/doc/...`
-- Issues relacionadas: #<!-- número de issue -->
+<!-- Links to relevant documentation in closter-core/doc -->
+- Related documentation: `closter-core/doc/...`
+- Related issues: #<!-- issue number -->
 
 ## Status
-<!-- Estado actual de la decisión -->
-- [ ] Proposed (en discusión)
-- [ ] Accepted (aprobada)
-- [ ] Superseded (reemplazada por otra decisión)
+<!-- Current status of the decision -->
+- [ ] Proposed (under discussion)
+- [ ] Accepted (approved)
+- [ ] Superseded (replaced by another decision)
 
 ## Owner
-<!-- Persona responsable de la decisión y su implementación -->
-@<!-- usuario de GitHub -->
+<!-- Person responsible for the decision and its implementation -->
+@<!-- GitHub username -->
 
 ---
 
-**IMPORTANTE**: Esta decisión debe documentarse en `closter-core/doc/` (por ejemplo, en `closter-core/doc/decisions/` o la carpeta relevante). La issue sirve para discusión y tracking; la documentación final vive en el repositorio de código como fuente de verdad.
+**IMPORTANT**: This decision must be documented in `closter-core/doc/` (for example, in `closter-core/doc/decisions/` or the relevant folder). The issue serves for discussion and tracking; the final documentation lives in the code repository as the source of truth.
 

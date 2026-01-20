@@ -1,43 +1,43 @@
 # Closter
 
-Plataforma operativa para moda circular que coordina workflows de intake, valoración, consignación y venta a través de Shopify e integraciones con sistemas externos.
+Operational platform for circular fashion that coordinates intake, valuation, consignment, and sales workflows through Shopify and integrations with external systems.
 
 ## Core Repositories
 
 ### `closter-core`
-Backend FastAPI y aplicación Next.js para administración e intake. Contiene la documentación técnica completa del sistema en `/doc`, que actúa como fuente de verdad única.
+FastAPI backend and Next.js application for administration and intake. Contains the complete technical documentation of the system in `/doc`, which serves as the single source of truth.
 
-**Responsabilidades:**
-- Operational Hub: mantiene estado interno, eventos y proyecciones
-- API y webhooks para integraciones externas
-- Superficie Admin/Intake con autenticación Stack Auth
-- Sistema de tareas en `/tasks` para gestión de trabajo
+**Responsibilities:**
+- Operational Hub: maintains internal state, events, and projections
+- API and webhooks for external integrations
+- Admin/Intake surface with Stack Auth authentication
+- Task system in `/tasks` for work management
 
 ### `closter-theme`
-Tema Shopify Liquid para el storefront público. Superficie de usuario final con autenticación nativa de Shopify.
+Shopify Liquid theme for the public storefront. End-user surface with native Shopify authentication.
 
 ## Architecture at a Glance
 
-- **Operational Hub**: Base de datos propia (Neon Postgres) como centro de coordinación operativa
-- **Integraciones externas**: Shopify y ConsignCloud vía APIs y webhooks (no replicación de datos)
-- **Arquitectura**: Event-driven con principios DDD-lite, idempotencia y observabilidad
-- **Separación de superficies**: Storefront (Shopify auth) vs Admin/Intake (Stack Auth)
-- **Fuente de verdad**: Documentación técnica en `closter-core/doc`
+- **Operational Hub**: Own database (Neon Postgres) as operational coordination center
+- **External integrations**: Shopify and ConsignCloud via APIs and webhooks (no data replication)
+- **Architecture**: Event-driven with DDD-lite principles, idempotency, and observability
+- **Surface separation**: Storefront (Shopify auth) vs Admin/Intake (Stack Auth)
+- **Source of truth**: Technical documentation in `closter-core/doc`
 
 ## Documentation
 
-La documentación técnica completa del sistema vive en `closter-core/doc` y es la única fuente de verdad. Decisiones arquitectónicas, guías de integración y especificaciones técnicas se mantienen allí.
+The complete technical documentation of the system lives in `closter-core/doc` and is the single source of truth. Architectural decisions, integration guides, and technical specifications are maintained there.
 
 ## How We Work
 
-1. **Issues**: Se crean issues para bugs, features o decisiones arquitectónicas
-2. **Tasks**: Para features, se crea/actualiza `Task.md` en `closter-core/tasks/active/` vinculado a la issue
-3. **PRs**: Pull requests deben referenciar issues y, cuando aplique, tasks
-4. **Merge**: Tras revisión y aprobación, se mergea a la rama principal
+1. **Issues**: Issues are created for bugs, features, or architectural decisions
+2. **Tasks**: For features, `Task.md` is created/updated in `closter-core/tasks/active/` linked to the issue
+3. **PRs**: Pull requests must reference issues and, when applicable, tasks
+4. **Merge**: After review and approval, merge to main branch
 
 ## Security & Access
 
-- **Storefront**: Autenticación nativa de Shopify
-- **Admin/Intake**: Stack Auth para operadores internos
-- Separación clara de responsabilidades y superficies de autenticación
+- **Storefront**: Native Shopify authentication
+- **Admin/Intake**: Stack Auth for internal operators
+- Clear separation of responsibilities and authentication surfaces
 
