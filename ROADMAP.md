@@ -1,11 +1,13 @@
 # 🚀 Closter Roadmap 2026
 
+> **📋 Important:** Before reading this roadmap, please review our [Planning Methodology](./PLANNING_GUIDE.md) to understand how strategic roadmap phases connect to milestones, issues, and weekly execution.
+
 **From Core Infrastructure to Operational Launch**
 
 ## Phase 1: Core & Foundation
 
 ### Milestone 0.1 – "The Engine"
-**Period:** January 12 – January 19
+**Period:** January 20 – January 27
 
 #### Focus
 
@@ -39,7 +41,7 @@ Deliver a stable, secure, and scalable foundation on top of which all business w
 ## Phase 2: Intelligent Intake & AI
 
 ### Milestone 0.5 – "The Brain"
-**Period:** January 20 – January 27
+**Period:** January 28 – February 4
 
 #### Focus
 
@@ -69,7 +71,7 @@ Reduce product creation time from minutes to seconds while minimizing human erro
 ## Phase 3: Shopify Ecosystem & Logistics
 
 ### Milestone 0.8 – "The Business"
-**Period:** January 28 – February 4
+**Period:** February 5 – February 12
 
 #### Focus
 
@@ -94,7 +96,7 @@ Fully automate the flow from sale → fulfillment, allowing the business to scal
 ## Phase 4: Consignor Portal & Payouts
 
 ### Milestone 1.0 – "The Scale"
-**Period:** February 5 – February 19
+**Period:** February 13 – February 27
 
 #### Focus
 
