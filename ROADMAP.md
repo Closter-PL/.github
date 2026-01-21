@@ -2,141 +2,172 @@
 
 > **📋 Important:** Before reading this roadmap, please review our [Planning Methodology](./PLANNING_GUIDE.md) to understand how strategic roadmap phases connect to milestones, issues, and weekly execution.
 
-**From Core Infrastructure to Operational Launch**
+**From Event-Driven Core to Operational Scale**
 
-## Phase 1: Core & Foundation
+## Phase 1 — Core Infrastructure & Event Backbone
+### Milestone V1 — Foundation / Core Alive
 
-### Milestone 0.1 – "The Engine"
-**Period:** January 20 – January 27
+**Period:** Jan 26 – Feb 14
 
 #### Focus
 
-Establishing the core operational backbone of Closter, including infrastructure, security, and system boundaries.
+Establish the event-driven foundation of Closter. Introduce the core mechanisms that allow the system to evolve safely without breaking existing contracts.
 
 #### Key Deliverables
 
-**Core Platform Architecture**
-- High-efficiency monorepo structure
-- FastAPI backend for domain logic, events, and integrations
-- Next.js Admin/Intake application for internal operations
+**Event-Driven Core**
+- Append-only Event Store (PostgreSQL, JSONB)
+- In-memory Event Bus (pub/sub)
+- Dual-write strategy (DB + events) for backward compatibility
+- Correlation & causation groundwork
 
-**Operational Database**
-- Neon PostgreSQL (serverless) as the central operational hub
-- Schema migrations managed via Alembic
-- Foundation for event storage and read models
+**Read Model Foundations**
+- Items projection
+- Deterministic projection handlers
+- Feature-flagged read switch (tables → projections)
 
-**Hybrid Authentication Model**
-- Stack Auth for internal operators and administrative access
-- Shopify Customer Authentication for storefront users, avoiding duplicate accounts
+**Operational Backbone**
+- FastAPI backend as the system of record
+- Alembic-managed migrations
+- Neon PostgreSQL as central operational DB
 
-**Media Infrastructure**
-- Supabase Storage (S3-compatible) for images and media assets
+**Outbox Foundation**
+- Outbox tasks table
+- First operational task (Shopify sync)
+- Worker process with idempotent execution
 
 #### Goal
 
-Deliver a stable, secure, and scalable foundation on top of which all business workflows can be built, fully aligned with the Shopify ecosystem.
+The system is alive. Core flows work end-to-end, events are first-class citizens, and the platform can grow without architectural rewrites.
 
 ---
 
-## Phase 2: Intelligent Intake & AI
+## Phase 2 — Stability, Lifecycle & Intelligence
+### Milestone V1.1 — Stability & Lifecycle
 
-### Milestone 0.5 – "The Brain"
-**Period:** January 28 – February 4
+**Period:** Feb 17 – Feb 28
 
 #### Focus
 
-Extreme automation of product intake and cataloging through AI-driven workflows.
+Make the system robust under real operational conditions. Complete lifecycle coverage and add safety mechanisms.
 
 #### Key Deliverables
 
-**AI Intake Graph**
-- LangGraph-based AI pipeline (GPT-4o)
-- Automated extraction of brand, size, condition, and category from images
+**Lifecycle Events**
+- ProductUpdated, ProductDeleted, ProductPublished
+- ValuationRequested / ValuationCompleted
 
-**ConsignCloud Integration**
-- Bidirectional synchronization of inventory and categories
-- Alignment between external consignment data and Closter's operational state
+**System Robustness**
+- Projection rebuild tooling
+- Consistency validation (tables vs projections)
+- Retry logic (basic) and failure handling
 
-**Operator Intake UI**
-- Warehouse-optimized interface
-- Batch uploads and AI-assisted corrections
-- Designed for speed and low cognitive load
+**AI-Assisted Intake (Integrated)**
+- AI-driven intake flows aligned with event model
+- Operator-friendly intake UX
+- AI corrections without breaking domain invariants
 
 #### Goal
 
-Reduce product creation time from minutes to seconds while minimizing human error in cataloging.
+The system tolerates change, failures, and day-to-day operations without data drift or manual fixes.
 
 ---
 
-## Phase 3: Shopify Ecosystem & Logistics
+## Phase 3 — Full Read Model & Domain Visibility
+### Milestone V1.2 — Full Read Model
 
-### Milestone 0.8 – "The Business"
-**Period:** February 5 – February 12
+**Period:** Mar 3 – Mar 7
 
 #### Focus
 
-Enable direct sales, intelligent pricing, and automated logistics workflows.
+Complete the domain read model so the backend no longer depends on operational tables for queries.
 
 #### Key Deliverables
 
-**Shopify App Proxy Integration**
-- Secure exposure of Closter data within the closter.pl domain
-- Embedded operational data inside the storefront experience
+**Domain Projections**
+- Listings projection
+- Contracts projection
+- Offers projection
 
-**AI Pricing Engine (RAG-based)**
-- Retrieval-augmented pricing suggestions
-- Historical comparable sales analysis to recommend optimal market pricing
+**Read Isolation**
+- All GET endpoints served from projections
+- Feature flags for safe rollout and rollback
 
 #### Goal
 
-Fully automate the flow from sale → fulfillment, allowing the business to scale without proportional increases in administrative workload.
+The domain is fully observable, queryable, and decoupled from write paths.
 
 ---
 
-## Phase 4: Consignor Portal & Payouts
+## Phase 4 — Operational Automation & Integrations
+### Milestone V2 — Operational Automation
 
-### Milestone 1.0 – "The Scale"
-**Period:** February 13 – February 27
+**Period:** Mar 10 – Mar 28
 
 #### Focus
 
-Consignor experience, trust, transparency, and financial settlements.
+Automate business operations end-to-end using deterministic, event-driven workflows.
 
 #### Key Deliverables
 
-**Consignor Portal**
-- Visibility into listed items, sales history, and accumulated balance
-- Clear, self-service access to operational state
+**Outbox Pattern (Complete)**
+- All task types implemented
+- Idempotent, retryable execution
+- Dead-letter handling
 
-**Payout System**
-- Withdrawal logic supporting bank transfers and Stripe / Przelewy24
-- Auditable and deterministic financial flows
+**External Integrations**
+- Shopify publishing & sync
+- PSP and carrier webhooks
+- Event → task mapping layer
 
-**Database Security (RLS)**
-- Row Level Security for strict data isolation
-- Each user can only access their own financial and inventory data
+**Business Logic Automation**
+- Contract Readiness Evaluator
+- Financial and logistics workflows
+- No manual glue code
 
 #### Goal
 
-Create a trustworthy, scalable consignor experience that supports long-term retention and growth.
+The system works by itself. Human intervention is the exception, not the rule.
 
 ---
 
-## Phase 5: UX Refinement & Operational Hardening
+## Phase 5 — Scale, Observability & Compliance
+### Milestone V3 — Scale, Observability & Compliance-Ready
+
+**Period:** Mar 31 – Apr 11
 
 #### Focus
 
-UX polish, operational robustness, and iteration based on real usage.
+Prepare Closter for scale, audits, and regulated growth.
 
-#### Scope
+#### Key Deliverables
 
-- Form and workflow refinement
-- Edge-case handling
-- Performance and usability improvements across all surfaces
+**Observability**
+- Prometheus metrics
+- Structured logging with correlation IDs
+- Event flow inspection endpoints
+
+**Traceability & Debugging**
+- Full event chains per request
+- Deterministic reasoning for system decisions
+
+**Compliance Readiness**
+- VAT / KSeF hooks (no logic yet)
+- Auditable financial and operational trails
+
+#### Goal
+
+The system can be debugged, audited, and scaled with confidence.
 
 ---
 
 ## Summary
 
-This roadmap represents Closter's progression from a robust operational core to a fully functioning, scalable circular fashion platform, with clear milestones, measurable outcomes, and a strong emphasis on automation, security, and integration.
+This roadmap transitions Closter from a traditional CRUD platform into a deterministic, event-driven operating system for circular fashion.
+
+- Early phases focus on correctness and evolvability
+- Middle phases unlock automation and scale
+- Final phase ensures observability, trust, and compliance
+
+No hype, no shortcuts — just a system that can survive real growth.
 
